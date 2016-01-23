@@ -20,9 +20,10 @@ public interface StickyRecyclerHeadersAdapter<VH extends RecyclerView.ViewHolder
    * to inflate the layout for the header.
    *
    * @param parent the view to create a header view holder for
+   * @param position
    * @return the view holder
    */
-  VH onCreateHeaderViewHolder(ViewGroup parent);
+  public VH onCreateHeaderViewHolder(ViewGroup parent, int position);
 
   /**
    * Binds an existing ViewHolder to the specified adapter position.
